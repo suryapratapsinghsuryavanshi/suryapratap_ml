@@ -7,10 +7,16 @@ import { myFetch } from '../utils/myFetch';
 import PastWork from '../components/PastWork';
 
 type indexType = {
-    data: any
+    data: any,
+    projects: [{
+        id: number,
+        name: string,
+        desc: string,
+        link: string
+    }]
 }
 
-const Home: NextPage<indexType> = ({ data }) => {
+const Home: NextPage<indexType> = ({ data, projects }) => {
 
     const [social, setSocial] = useState(data);
 
@@ -38,7 +44,7 @@ const Home: NextPage<indexType> = ({ data }) => {
             <div className="sort_about mt-4 p-4">
                 <h2 className='text-3xl heading_2'>Who am I?</h2>
                 <hr className='hr-2' />
-                <p className="text-amber-700 w-1/2">I am a tech enthusiast who loves to use new technology with my passion. I spend most of the time learning things and applying them to something valuable.</p>
+                <p className="text-amber-700 w-1/2">My name is Suryapratap Singh, and I am getting my Bachelor of Technology degree in Information Technology from IGEC Sagar, I am very interested in developing products that solve some real-world problems, and I have those types of products as follows But as far as the user-base aspect, I haven't had success, so I think if I have in the well-known company I can get a bigger user base to test the product and improve them Is. If you hired me I would do my best to build that product and make a real impact on the community and customers.</p>
             </div>
             <div className="sort_about mt-4 p-4">
                 <h2 className='text-3xl heading_2'>My Journey</h2>
@@ -83,16 +89,19 @@ const Home: NextPage<indexType> = ({ data }) => {
                     </li>
                 </ol>
             </div>
-            <PastWork/>
+            <PastWork projects={projects}/>
         </>
     );
 }
 
 export async function getServerSideProps(context: any) {
     const res = await myFetch(process.env.NEXT_PUBLIC_SERVER_URL + "/api/social");
+    const projects = await myFetch(process.env.NEXT_PUBLIC_SERVER_URL + "/api/projects");
+
     return {
         props: {
-            data: res
+            data: res,
+            projects
         }
     }
 }

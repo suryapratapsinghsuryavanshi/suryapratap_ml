@@ -1,0 +1,50 @@
+[
+    {
+        "id": 0,
+        "name": "SolverJs | NPM Package",
+        "desc": "SolverJS is a combination of many common mathematical and some very used logic solutions.",
+        "link": "https://solverjs.ml/"
+    },
+    {
+        "id": 1,
+        "name": "InstaDpLoader | Android App",
+        "desc": "Download the image of your friends and loved ones with very high quality.",
+        "link": "https://play.google.com/store/apps/details?id=ml.instadploader"
+    },
+    {
+        "id": 2,
+        "name": "PrevSec | Private Screenshot",
+        "desc": "A private screenshot tacker, Without any kind of detection by any Application.",
+        "link": "https://play.google.com/store/apps/details?id=ml.suryapratap.prevsec"
+    },
+    {
+        "id": 3,
+        "name": "LocalIDE | Online IDE",
+        "desc": "A Simple and easy to use Online IDE, supportd 6 languages.",
+        "link": "https://localide.ml/"
+    },
+    {
+        "id": 4,
+        "name": "Learn Shell Script | Book",
+        "desc": "This is a guidebook for a shell script, here we have tried our best to teach shell script and explain it to you.",
+        "link": "https://www.amazon.com/Learn-Shell-Script-Suryapratap-Suryavanshi-ebook/dp/B09V2ZG7FK"
+    },
+    {
+        "id": 5,
+        "name": "Local API | Useful API's",
+        "desc": "It is a Useful Collection of some paid and free API's you can use them freely.",
+        "link": "https://local-apis.herokuapp.com/"
+    },
+    {
+        "id": 6,
+        "name": "YourQuery | Headless Feedback",
+        "desc": "Get website feedback directly to your email without any database intergation, corss platform.",
+        "link": "https://yourquerys.herokuapp.com/"
+    },
+    {
+        "id": 7,
+        "name": "LocalQuiz | Computer in Hindi",
+        "desc": "A website where our small team post computer releted articles in Hindi.",
+        "link": "https://www.localquiz.ml/"
+    }
+]
