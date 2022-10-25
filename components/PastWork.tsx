@@ -1,7 +1,6 @@
 import { NextPage } from "next";
 import { useState } from "react";
 import { CgSun } from 'react-icons/cg';
-import { randomChoice } from 'solverjs';
 
 type pastWorkType = {
     projects: [{
@@ -14,11 +13,6 @@ type pastWorkType = {
 
 const PastWork: NextPage<pastWorkType> = ({ projects }) => {
     const [ data, setData ] = useState(projects);
-
-    const getRandomIcon = () => {
-        let icons = [ "CgYinyang", "CgWebsite", "CgTikcode", "CgSupport" , "CgSmartphoneChip", "CgShortcut", "CgPokemon", "CgMediaLive", "CgLivePhoto", "CgInfinity", "CgSun" ];
-        return randomChoice(icons);
-    }
 
     return (
         <>
