@@ -5,6 +5,7 @@ import HeroBackground from '../components/Hero_Background';
 import HomeStyle from '../styles/Home.module.css';
 import { myFetch } from '../utils/myFetch';
 import PastWork from '../components/PastWork';
+import FeedBack from '../components/FeedBack';
 
 type indexType = {
     data: any,
@@ -90,6 +91,7 @@ const Home: NextPage<indexType> = ({ data, projects }) => {
                 </ol>
             </div>
             <PastWork projects={projects}/>
+            <FeedBack/>
         </>
     );
 }
