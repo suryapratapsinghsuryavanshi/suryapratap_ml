@@ -45,7 +45,8 @@ const Home: NextPage<indexType> = ({ data, projects }) => {
             <div className="sort_about mt-4 p-4">
                 <h2 className='text-3xl heading_2'>Who am I?</h2>
                 <hr className='hr-2' />
-                <p className="text-amber-700 w-1/2">{"My name is Suryapratap Singh, and I am getting my Bachelor of Technology degree in Information Technology from IGEC Sagar, I am very interested in developing products that solve some real-world problems, and I have those types of products as follows But as far as the user-base aspect, I haven't had success, so I think if I have in the well-known company I can get a bigger user base to test the product and improve them Is. If you hired me I would do my best to build that product and make a real impact on the community and customers."}</p>
+                {/* <p className="text-amber-700 w-1/2">{"My name is Suryapratap Singh, and I am getting my Bachelor of Technology degree in Information Technology from IGEC Sagar, I am very interested in developing products that solve some real-world problems, and I have those types of products as follows But as far as the user-base aspect, I haven't had success, so I think if I have in the well-known company I can get a bigger user base to test the product and improve them Is. If you hired me I would do my best to build that product and make a real impact on the community and customers."}</p> */}
+                <p className="text-amber-700 w-1/2">{"I am a student and teacher teaching most of the CS/IT subjects. And I'm building a community where everyone having good knowledge about tech and there usage."}</p>
             </div>
             <div className="sort_about mt-4 p-4">
                 <h2 className='text-3xl heading_2'>My Journey</h2>
