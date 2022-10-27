@@ -35,7 +35,7 @@ const Header: NextPage = (props: any) => {
             <div className="header flex justify-between items-center p-4 z-50" id="header" style={{background: "#fff", color: "#7d564b"}}>
                 <div className="left_header_section">
                     <div className="logo flex items-center">
-                        <Image className="rounded-full" height={45} width={45} src={Logo}/>
+                        <Image alt="logo" className="rounded-full" height={45} width={45} src={Logo}/>
                         <Link href={"/"}>
                             <h1 className="ml-2 text-2xl cursor-pointer font-normal">{myData?.name}</h1>
                         </Link>

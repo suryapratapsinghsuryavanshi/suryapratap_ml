@@ -33,7 +33,7 @@ const Home: NextPage<indexType> = ({ data, projects }) => {
                     <h2 className="text-3xl mt-4" style={{color: '#7d564b'}}>Connect With Me.</h2>
                     {social !== null && social !== undefined &&
                         Object.keys(social).map(key => {
-                            return <a key={key.toString()} target='_blank' href={social[key]} className="ease-in-out">
+                            return <a key={key.toString()} rel="noreferrer" target='_blank' href={social[key]} className="ease-in-out">
                                 <div className="bg-yellow-400 rounded-lg p-2 m-2 shadow-lg mt-5 md-5 hover:scale-105">
                                     by {camelToCapital(key.toString())}
                                 </div>
@@ -45,7 +45,7 @@ const Home: NextPage<indexType> = ({ data, projects }) => {
             <div className="sort_about mt-4 p-4">
                 <h2 className='text-3xl heading_2'>Who am I?</h2>
                 <hr className='hr-2' />
-                <p className="text-amber-700 w-1/2">My name is Suryapratap Singh, and I am getting my Bachelor of Technology degree in Information Technology from IGEC Sagar, I am very interested in developing products that solve some real-world problems, and I have those types of products as follows But as far as the user-base aspect, I haven't had success, so I think if I have in the well-known company I can get a bigger user base to test the product and improve them Is. If you hired me I would do my best to build that product and make a real impact on the community and customers.</p>
+                <p className="text-amber-700 w-1/2">{"My name is Suryapratap Singh, and I am getting my Bachelor of Technology degree in Information Technology from IGEC Sagar, I am very interested in developing products that solve some real-world problems, and I have those types of products as follows But as far as the user-base aspect, I haven't had success, so I think if I have in the well-known company I can get a bigger user base to test the product and improve them Is. If you hired me I would do my best to build that product and make a real impact on the community and customers."}</p>
             </div>
             <div className="sort_about mt-4 p-4">
                 <h2 className='text-3xl heading_2'>My Journey</h2>
@@ -86,7 +86,7 @@ const Home: NextPage<indexType> = ({ data, projects }) => {
                         <div className="absolute w-3 h-3 bg-amber-600 rounded-full mt-1.5 -left-1.5 border border-white dark:border-amber-900 dark:bg-amber-700"></div>
                         <time className="mb-1 text-sm font-normal leading-none text-amber-700 w-1/2">2022</time>
                         <h3 className="text-lg font-semibold text-amber-900 dark:text-white">Learning, Building, and Writing</h3>
-                        <p className="text-base font-normal text-amber-700 w-1/2 dark:text-amber-400">I think it's going to be an interesting year because this year I tried to do all the things I had to do.</p>
+                        <p className="text-base font-normal text-amber-700 w-1/2 dark:text-amber-400">{"I think it's going to be an interesting year because this year I tried to do all the things I had to do."}</p>
                     </li>
                 </ol>
             </div>
