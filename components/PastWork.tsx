@@ -63,7 +63,7 @@ const PastWork: NextPage<pastWorkType> = ({ projects }) => {
                         <a>
                             <h5 style={{ color: "#7d564b" }} className="mb-2 text-2xl font-semibold tracking-tight">DevOps</h5>
                         </a>
-                        <p className="mb-3 font-normal text-gray-500 dark:text-gray-400">With: AWS, Firebase, GCP, Linux, other devops tools etc.</p>
+                        <p className="mb-3 font-normal text-gray-500 dark:text-gray-400">With: AWS, Firebase, GCP, Linux, Shell Script, YAML Script other devops tools etc.</p>
 
                     </div>
                     <div className="mt-4 p-6 max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
