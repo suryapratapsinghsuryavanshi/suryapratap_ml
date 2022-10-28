@@ -61,6 +61,19 @@
     border-radius: 50px;
 }
 
+@media (max-width: 768px) {
+    #menu li {
+        margin-bottom: 1rem;
+        width: -webkit-fill-available;
+    }
+
+    #back {
+        clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 100% 100%, 0% 100%);
+        margin: 0.5rem;
+        height: 50vh;
+    }
+}
+
 /* tailwind rules */
 @tailwind base;
 @tailwind components;

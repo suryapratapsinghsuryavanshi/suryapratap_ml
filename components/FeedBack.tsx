@@ -40,7 +40,7 @@ const PastWork: NextPage = () => {
             <div className="sort_about mt-4 p-4">
                 <h2 className='text-3xl heading_2'>Get In touch with Me.</h2>
                 <hr className='hr-2' />
-                <p className="text-amber-700 w-1/2">{"You can connect with a medium I've presented."}</p>
+                <p className="text-amber-700 md:w-1/2">{"You can connect with a medium I've presented."}</p>
                 <div className="mt-4">
                     <div className="p-6 bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
                         { !set ?
@@ -48,7 +48,7 @@ const PastWork: NextPage = () => {
                                 <a>
                                     <h5 style={{ color: "#7d564b" }} className="mb-2 text-2xl font-semibold tracking-tight">Query Form</h5>
                                 </a>
-                                <div className="grid grid-cols-3 gap-6 mb-6">
+                                <div className="grid grid-flow-row-dense md:grid-cols-3 gap-6 mb-6">
                                     <div>
                                         <label htmlFor="name" className="block mb-2 text-sm font-medium text-amber-700">Full Name</label>
                                         <input value={name} onChange={(e) => {

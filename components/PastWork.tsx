@@ -24,8 +24,8 @@ const PastWork: NextPage<pastWorkType> = ({ projects }) => {
             <div className="sort_about mt-4 p-4">
                 <h2 className='text-3xl heading_2'>{"Interesting, things I've done in the past!"}</h2>
                 <hr className='hr-2' />
-                <p className="text-amber-700 w-1/2">I am a tech enthusiast who loves to use new technology with my passion. I spend most of the time learning things and applying them to something valuable.</p>
-                <div className="grid grid-cols-3 justify-items-center">
+                <p className="text-amber-700 md:w-1/2">I am a tech enthusiast who loves to use new technology with my passion. I spend most of the time learning things and applying them to something valuable.</p>
+                <div className="grid grid-flow-row-dense md:grid-cols-3 justify-items-center gap-4">
                     {
                         data.length >= 1 ?
                             data.map(work => {
@@ -48,8 +48,8 @@ const PastWork: NextPage<pastWorkType> = ({ projects }) => {
             <div className="sort_about mt-4 p-4">
                 <h2 className='text-3xl heading_2'>Experienced Technologies</h2>
                 <hr className='hr-2' />
-                <p className="text-amber-700 w-1/2">{"I love to learn and Teach, so as part interest I've worked and experienced most technologies."}</p>
-                <div className="grid grid-cols-4 justify-between gap-4">
+                <p className="text-amber-700 md:w-1/2">{"I love to learn and Teach, so as part interest I've worked and experienced most technologies."}</p>
+                <div className="grid grid-flow-row-dense md:grid-cols-4 justify-between gap-4">
                     <div className="mt-4 p-6 max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
                         <SiWebpack className="text-4xl text-amber-600 mb-2" />
                         <a>
